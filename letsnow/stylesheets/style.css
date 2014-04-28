@@ -443,7 +443,7 @@ img.aligncenter {
     display: none;
 }
 
-.site-header img, .entry-content img, .comment-content img, .widget img {
+.site-header img, .entry-content img, .comment-content img, .widget img,.simple-header  img {
     max-width: 100%;
 	border-radius: 50%;
 	
@@ -1358,6 +1358,10 @@ kbd {
 	margin: 0 7.5% 0.125em;
 	line-height: 1.389;
 	}
+    #content
+    {
+        margin: 2em 4em 2em 4em;
+    }
 	
 }
 
@@ -1380,8 +1384,4 @@ kbd {
 p.previous
 {
 	text-align: center;
-}
-#content
-{
-	margin: 2em 4em 2em 4em;
 }
