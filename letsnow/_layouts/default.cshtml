@@ -15,7 +15,13 @@
 	<link rel="alternate" type="application/rss+xml" title="RSS - letsnow" href="/rss.xml" />
     <link rel="alternate" type="application/atom+xml" title="Atom - letsnow" href="/feed.xml" />
 	
-    <title>letsnow</title>
+    <title>
+	    @if(Model is Snow.ViewModels.PostViewModel)
+        {
+            <text>@(((Snow.ViewModels.PostViewModel)Model).Title) - </text>
+        }
+		letsnow
+	</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     @Html.CanonicalUrl()
